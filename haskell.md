@@ -1,0 +1,39 @@
+﻿#haskell
+## Data.List
+
+- intersperse 取一个元素与list作参数，并将该元素置于List元素的中间
+- intercalate 取两个list做参数。它会将第一个List交叉插入两个list中间，并返回新的list
+- transpose 反转List的List，行变列，相当于转置
+- concat 把一组List连接为一个List
+- concatMap 先进行map后再concat
+- and 取一组布尔值的List做参数，只有其中全为True的话，才为True
+- or 与and相反，有一个True就返回True
+- and 取一个条件和List，检查是否全部符合条件
+- any 取值和all相同，检查是否有元素复合该条件
+- iterate 去一个函数和一个值做参数。它会用值调用函数，得到结果再次调用函数，产生一个无限的List
+- splitAt 取一个List和数值做参数，并在该数值位置断开，返回一个二元组。
+- takeWhile 从一个List中取元素，不符合条件就停止
+- dropWhile 它扔掉符合条件的元素，一旦返回Fasle就返回List余下的部分
+- span 返回两个List第一个是List同参数调用takewhile所得的结果，第二个是剩下的部分
+- break 是True是断开List，其余行为和span相同
+- sort 排序
+- group 取一个List做参数， 并将其中相邻并相等的元素各自归类，形成一个List
+- inits 会递归的调用自身最后什么都不剩
+- partition 去一个限制条件和List做参数，返回两个List。第一个中包含所有符合条件的List，第二个包含剩下的。这个会遍历整个List。
+- find 去一个List和限制条件做参数，并返回首次符合条件的函数，而这个元素是个MayBe值。
+- elemIndex maybe返回我们所寻找值得下标
+- elemIndices 它返回的是个List，不存在list为空，其中返回所有相同元素的下标
+- findIndex 与find相同不过返回的是元素的下标，也是返回首次
+- findIndices 返回所有相同元素的下标
+- zipWith3 与zipWith相同，不过支持3个参数的操作，直到zipWith7
+- zip3 同上，直到7
+- lines 以一个字符串为参数，返回其中每一行所组成的List
+- unlines 与上面的相反，去一组的string的List，合并成一个string
+- words 与 unwords 将一个字符串中所有的单词变成一个List，unwords相反
+- nub 去除其中相同的元素
+- delete取一个元素和List做参数，会删掉List中首先出现的元素
+- \\ 表示List的差集操作 会除掉所有在右边在左边的元素
+- union 相当于集合中的并集
+- intersection 相当于集合的交集，他返回两个List中相同的部分
+- insert 可以讲一个元素参入一个可排序的List, 并将其至于首个大于他的元素之前，如果一个List是排序的那么insert完之后仍是排序的
+- genericLength genericTake genericDrop genericSplictAt genericIndex genericReplicate 不再是int类型，而是Interal
