@@ -1,6 +1,10 @@
 ﻿#haskell
 ## Data.List
 
+
+----------
+
+
 - intersperse 取一个元素与list作参数，并将该元素置于List元素的中间
 - intercalate 取两个list做参数。它会将第一个List交叉插入两个list中间，并返回新的list
 - transpose 反转List的List，行变列，相当于转置
@@ -37,6 +41,11 @@
 - intersection 相当于集合的交集，他返回两个List中相同的部分
 - insert 可以讲一个元素参入一个可排序的List, 并将其至于首个大于他的元素之前，如果一个List是排序的那么insert完之后仍是排序的
 - genericLength genericTake genericDrop genericSplictAt genericIndex genericReplicate 不再是int类型，而是Interal
+
+
+----------
+
+
 ## Data.Char
 - isControl 判断一个字符是否是控制字符
 - isSpace 判断一个字符是否为空格字符，包括空格，tab，换行符等。
