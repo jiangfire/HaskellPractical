@@ -37,3 +37,31 @@
 - intersection 相当于集合的交集，他返回两个List中相同的部分
 - insert 可以讲一个元素参入一个可排序的List, 并将其至于首个大于他的元素之前，如果一个List是排序的那么insert完之后仍是排序的
 - genericLength genericTake genericDrop genericSplictAt genericIndex genericReplicate 不再是int类型，而是Interal
+## Data.Char
+- isControl 判断一个字符是否是控制字符
+- isSpace 判断一个字符是否为空格字符，包括空格，tab，换行符等。
+- isLower 判断一个字符是否为小写
+- isUper 判断一个字符是否为大写
+- isAlpha 判断一个字符是否为字符
+- isAlphaNum 判断一个字符是否为字符或数字
+- isPrint 判断一个字符是否为可打印的
+- isDigit 判断一个字符是否为数字
+- isOctDigit 判断一个字符是否为八进制数字
+- isHexDigit 判断一个字符是否为十六进制数字
+- isLetter 判断一个字符是否为字母
+- isMark 判断是否为unicode注音字符
+- isNumber 判断一个字符是否为数字
+- isPunctuation 判断一个字符是否为标点符号
+- isSymbol 判断一个字符是否为标点符号
+- isSeperater 判断一个字符是否为unicode空格或分隔符
+- isAscii 判断一个字符是否在unicode字母表的前128位
+- isLatinl 判断一个字符是否在unicode的字母表的前256位
+- isAsciiUpper 判断一个字符是否为大写的ascii字符
+- isAsciiLower 判断一个字符是否为小写的Ascii字符
+- generalCategory 判断该字符的类型
+- toUpper 将一个字符转为大写字符
+- toLower 将一个字符转为小写字符
+- toTitle 将一个字符转为title-case， 对于大多数字符而言，title-case就是大写。
+- digitToInt 将一个字符转为数字，在'1'..'9', 'a'..'f', 'A'..'F'的范围之内
+- intToDigit是上面函数的反函数，它取一个0-15的Int值做参数，并返回一个小写字符
+- ord 与 char函数可将字符与对应的数字相互变换

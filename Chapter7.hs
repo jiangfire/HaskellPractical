@@ -1,4 +1,5 @@
 import Data.List
+import Data.Char
 
 numUniques :: (Eq a) => [a] -> Int
 numUniques = length . nub
@@ -10,3 +11,15 @@ serach needle haystack =
 
 on' :: (b -> b -> c) -> (a -> b) -> a -> a -> c
 f `on'` g = \x y -> f (g x) (g y)
+
+encode' :: Int -> String -> String
+encode' shift msg =
+	let
+		ords = map ord msg
+		shifted = map (+ shift) ords
+	in
+		map chr shifted
+
+decode' :: Int -> String -> String
+decode' shift msg = encode' (negate shift) msg
+
