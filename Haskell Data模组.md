@@ -1,4 +1,5 @@
-﻿#haskell
+﻿#Haskell Data模组
+
 ## Data.List
 
 
@@ -74,3 +75,20 @@
 - digitToInt 将一个字符转为数字，在'1'..'9', 'a'..'f', 'A'..'F'的范围之内
 - intToDigit是上面函数的反函数，它取一个0-15的Int值做参数，并返回一个小写字符
 - ord 与 char函数可将字符与对应的数字相互变换
+
+-------------
+
+## Data.Map
+
+- Data.Map.fromList 取一个关联列表， 返回与之等价的Map。fromList :: (Ord k) => [(k, v)] -> Map k v
+- Data.Map.empty 返回一个空Map
+- Data.Map.insert 取一个键， 一个值， 一个Map， 将该键值对插入到该map中
+- Data.Map.null 检查一个map是否为空
+- Data.Map.size 返回一个map的大小
+- Data.Map.singleton 取一个键值对做参数，并返回只含有一个映射的Map
+- Data.Map.lookup 找到相应的键值对就返回Just something, 否则就返回Nothing
+- Data.Map.member 取一个键与map做参数，并返回该键是否存在于该Map
+- Data.Map.filter 和List的版本很像， 判断的是value
+- Data.Map.toList 是fromList的反函数
+- Data.Map.fromListWith 取一个函数和一个List, 在出现重复是调用该函数
+- Data.Map.insertWith 取一个函数和List，再插入重复时调用该函数。
